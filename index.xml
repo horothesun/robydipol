@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Nome Cognome</title>
+    <link>https://example.com/</link>
+    <description>Recent content in Home on Nome Cognome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 07 Sep 2020 14:43:19 +0100</lastBuildDate>
+    
+	<atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blog in arrivo</title>
+      <link>https://example.com/post/coming-soon/</link>
+      <pubDate>Tue, 08 Sep 2020 23:37:54 +0100</pubDate>
+      
+      <guid>https://example.com/post/coming-soon/</guid>
+      <description>Articoli in arrivo! 🙂</description>
+    </item>
+    
+    <item>
+      <title>Pratiche</title>
+      <link>https://example.com/practices/</link>
+      <pubDate>Mon, 07 Sep 2020 20:14:51 +0100</pubDate>
+      
+      <guid>https://example.com/practices/</guid>
+      <description> Pratica A Pratica B Pratica C  </description>
+    </item>
+    
+    <item>
+      <title>Contatti</title>
+      <link>https://example.com/contacts/</link>
+      <pubDate>Mon, 07 Sep 2020 20:14:32 +0100</pubDate>
+      
+      <guid>https://example.com/contacts/</guid>
+      <description>Telefono: +39 0123 456789
+E-mail: nomecognome@gmail.com</description>
+    </item>
+    
+  </channel>
+</rss>
