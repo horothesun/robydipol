@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on Nome Cognome</title>
+    <title>Blog on Roby Di Pol</title>
     <link>https://horothesun.github.io/robydipol/post/</link>
-    <description>Recent content in Blog on Nome Cognome</description>
+    <description>Recent content in Blog on Roby Di Pol</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Sep 2020 23:37:54 +0100</lastBuildDate>
-    
-	<atom:link href="https://horothesun.github.io/robydipol/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 08 Sep 2020 23:37:54 +0100</lastBuildDate><atom:link href="https://horothesun.github.io/robydipol/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog in arrivo</title>
       <link>https://horothesun.github.io/robydipol/post/coming-soon/</link>
