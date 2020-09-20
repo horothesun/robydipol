@@ -2,7 +2,7 @@ name: "Page build notifier"
 
 on:
   page_build:
-  # workflow_dispatch: # enable manual execution
+  workflow_dispatch: # enable manual execution
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
         username: ${{ secrets.EMAIL_NOTIFIER_USERNAME }}
         password: ${{ secrets.EMAIL_NOTIFIER_PASSWORD }}
         subject: "robydipol.it - new version available 🎉"
-        body: "Check out the new website version: https://horothesun.github.io/robydipol/"
+        body: "Check out the new website version: horothesun.github.io/robydipol"
         to: ${{ secrets.EMAIL_TO_NOTIFY_01 }}
         from: "Website notifier"
         content_type: text/html
