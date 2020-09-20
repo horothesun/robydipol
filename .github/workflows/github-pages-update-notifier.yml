@@ -1,0 +1,30 @@
+name: GitHub Pages update notifier
+
+on:
+  push:
+    branches: [ gh-pages ]
+  pull_request:
+    branches: [ gh-pages ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Send email
+      uses: dawidd6/action-send-mail@v2
+      with:
+        server_address: smtp.gmail.com
+        server_port: 587
+        username: ${{ secrets.EMAIL_NOTIFIER_USERNAME }}
+        password: ${{ secrets.EMAIL_NOTIFIER_PASSWORD }}
+        subject: New website version available
+        # Literal body:
+        body: Check the new website version: https://horothesun.github.io/robydipol/
+        # Read file contents as body:
+        #body: file://README.md
+        to: ${{ secrets.EMAIL_TO_NOTIFY_01 }}
+        from: github-pages-notifier # <github-pages-notifier@gmail.com>
+        # Optional content type (defaults to text/plain):
+        content_type: text/html
+        # Optional attachments:
+        #attachments: attachments.zip,git.diff,./dist/static/main.js
