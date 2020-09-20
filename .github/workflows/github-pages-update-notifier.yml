@@ -1,4 +1,4 @@
-name: GitHub Pages update notifier
+name: "GitHub Pages update notifier"
 
 on:
   push:
@@ -17,9 +17,9 @@ jobs:
         server_port: 587
         username: ${{ secrets.EMAIL_NOTIFIER_USERNAME }}
         password: ${{ secrets.EMAIL_NOTIFIER_PASSWORD }}
-        subject: New website version available
+        subject: "New website version available"
         # Literal body:
-        body: Check the new website version: https://horothesun.github.io/robydipol/
+        body: "Check the new website version: https://horothesun.github.io/robydipol/"
         # Read file contents as body:
         #body: file://README.md
         to: ${{ secrets.EMAIL_TO_NOTIFY_01 }}
