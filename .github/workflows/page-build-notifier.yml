@@ -1,7 +1,12 @@
 name: "Page build notifier"
 
 on:
-  page_build
+  page_build:
+  workflow_dispatch:
+
+env:
+  SHORT_SITE_URL: robydipol.it
+  FULL_SITE_URL: "https://horothesun.github.io/robydipol/"
 
 jobs:
   build:
@@ -14,8 +19,8 @@ jobs:
         server_port: 587
         username: ${{ secrets.EMAIL_NOTIFIER_USERNAME }}
         password: ${{ secrets.EMAIL_NOTIFIER_PASSWORD }}
-        subject: "robydipol.it - new version available 🎉"
-        body: "Check out the new website version: https://horothesun.github.io/robydipol/"
+        subject: "${{ env.SHORT_SITE_URL }} - new version available 🎉"
+        body: "Check out the new website version: ${{ env.FULL_SITE_URL }}"
         to: ${{ secrets.EMAIL_TO_NOTIFY_01 }}
         from: "Website notifier"
         content_type: text/html
