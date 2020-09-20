@@ -1,12 +1,7 @@
 name: "Update notifier"
 
 on:
-  push:
-    branches:
-    - gh-pages
-  pull_request:
-    branches:
-    - gh-pages
+  page_build
 
 jobs:
   build:
