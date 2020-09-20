@@ -7,10 +7,6 @@ on:
   pull_request:
     branches:
     - gh-pages
-  workflow_dispatch:
-    inputs:
-      tags:
-        description: 'Description'
 
 jobs:
   build:
