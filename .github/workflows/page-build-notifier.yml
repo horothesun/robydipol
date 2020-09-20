@@ -2,7 +2,7 @@ name: "Page build notifier"
 
 on:
   page_build:
-  workflow_dispatch: # enable manual execution
+  # workflow_dispatch: # enable manual execution
 
 jobs:
   build:
