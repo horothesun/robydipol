@@ -22,13 +22,11 @@ jobs:
         username: ${{ secrets.EMAIL_NOTIFIER_USERNAME }}
         password: ${{ secrets.EMAIL_NOTIFIER_PASSWORD }}
         subject: "New website version available"
-        # Literal body:
+        # Literal body
         body: "Check the new website version: https://horothesun.github.io/robydipol/"
-        # Read file contents as body:
+        # Read file contents as body
         #body: file://README.md
         to: ${{ secrets.EMAIL_TO_NOTIFY_01 }}
-        from: github-pages-notifier # <github-pages-notifier@gmail.com>
-        # Optional content type (defaults to text/plain):
-        content_type: text/html
-        # Optional attachments:
+        from: github-pages-notifier
+        content_type: text/html # Optional content type (defaults to text/plain)
         #attachments: attachments.zip,git.diff,./dist/static/main.js
